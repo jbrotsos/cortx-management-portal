@@ -12,7 +12,7 @@ jobs:
         REPO_NAME: ${{ github.event.repository.name }}
         PR_NUMBER: ${{ github.event.number }}
     steps:
-    - name: Get the Organization Name
+    - name: Get the Organization Names
       run: echo ::set-env name=ORG_NAME::$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $1}')
     - name: Checkout
       uses: actions/checkout@v2
