@@ -61,6 +61,7 @@ import store from "./store/store";
 
 Vue.use(Router);
 
+// add another comment
 // Note: requiresAuth: Flag for User Logged into the system
 const router = new Router({
   routes: [
